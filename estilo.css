@@ -1,20 +1,73 @@
-body {
-    background-color: red;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap");
+:root {
+  --color-enfasis: #FF0000;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  font-size: 16px;
+}
+
+html.sr .load-hidden {
+  visibility: hidden;
 }
 
 /* *********************/
-/* seccion H E R O */
+/* seccion I N I C I O */
 /* *********************/
-#hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url("./assets/img/bg.jpg");
-    background-size: cover;
-    background-position: center center;
-  
-    height: 100vh;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+#inicio header a {
+  text-decoration: none;
+}
+#inicio header {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+}
+#inicio header .contenido-header {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+#inicio header .contenido-header h1 {
+  text-align: center;
+  color: var(--color-enfasis);
+}
+#inicio header .contenido-header nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+#inicio header .contenido-header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 12px;
+  font-weight: 400;
+  transition: 0.5s;
+}
+#inicio header .contenido-header nav ul li a:hover {
+  color: var(--color-enfasis);
+}
+#inicio header .contenido-header .redes a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  margin-left: 10px;
+  transition: 0.5s;
+}
+#inicio header .contenido-header .redes a:hover {
+  color: var(--color-enfasis);
+}
+#inicio header .contenido-header .seleccionado {
+  color: var(--color-enfasis);
+}
+#inicio header #icono-nav {
+  color: #fff;
+  display: none;
+}
